@@ -2,6 +2,7 @@ import Slider from "react-slick";
 import ArtCard from "./ArtCard";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { motion } from "framer-motion";
 
 const images = [
   {
@@ -72,14 +73,22 @@ const Destinations = () => {
 
   return (
     <div className="p-4 md:p-10" id="Destinations">
-      <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0 md:space-x-4">
+      <motion.div
+        className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0 md:space-x-4"
+        initial={{ opacity: 0, y: -20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5 }}
+      >
         <h2 className="text-3xl md:text-4xl font-bold text-center">
           Destinations
         </h2>
-        <button className="bg-blue-500 hover:bg-blue-800 text-white font-bold py-2 px-4 rounded-full">
+        <motion.button
+          className="bg-blue-500 hover:bg-blue-800 text-white font-bold py-2 px-4 rounded-full"
+          whileHover={{ scale: 1.1 }}
+        >
           View All Destinations
-        </button>
-      </div>
+        </motion.button>
+      </motion.div>
       <div className="pt-4">
         <Slider {...settings}>
           {images.map((image, index) => (

@@ -1,3 +1,5 @@
+import { motion } from "framer-motion";
+
 interface Props {
   imageUrl: string;
   title: string;
@@ -6,7 +8,12 @@ interface Props {
 
 const ArtCard = ({ imageUrl, title, description }: Props) => {
   return (
-    <div className="relative w-[320px] h-[450px] rounded-lg overflow-hidden shadow-lg m-4">
+    <motion.div
+      className="relative w-[320px] h-[450px] rounded-lg overflow-hidden shadow-lg m-4"
+      initial={{ opacity: 0, y: 50 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.5 }}
+    >
       <img
         src={imageUrl}
         alt="Art Display"
@@ -34,7 +41,7 @@ const ArtCard = ({ imageUrl, title, description }: Props) => {
           />
         </svg>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

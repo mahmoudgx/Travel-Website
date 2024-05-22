@@ -32,7 +32,6 @@ const FAQ = () => {
   const [activeIndex, setActiveIndex] = useState<number | null>(null);
 
   const toggleIndex = (index: number) => {
-    // Specify type for index
     setActiveIndex(activeIndex === index ? null : index);
   };
 

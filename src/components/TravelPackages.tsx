@@ -1,20 +1,23 @@
 const packages = [
   {
-    imageUrl: "https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0",
+    imageUrl:
+      "https://plus.unsplash.com/premium_photo-1683120751032-41fdd5226ab6?q=80&w=700&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     title: "Romantic Paris",
     description: "Experience the romance of Paris with our special package.",
     price: "$1200",
     isPopular: false,
   },
   {
-    imageUrl: "https://images.unsplash.com/photo-1483683804023-6ccdb62f86ef",
+    imageUrl:
+      "https://images.unsplash.com/photo-1577717903315-1691ae25ab3f?q=80&w=700&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     title: "Adventures in Bali",
     description: "Discover the beauty and excitement of Bali.",
     price: "$1500",
-    isPopular: true, // Mark this package as popular
+    isPopular: true,
   },
   {
-    imageUrl: "https://images.unsplash.com/photo-1516426122078-c23e76319801",
+    imageUrl:
+      "https://images.unsplash.com/photo-1516426122078-c23e76319801?q=80&w=700&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     title: "Safari in Kenya",
     description: "Join our safari tour in Kenya and see the Big Five.",
     price: "$1800",

@@ -33,6 +33,9 @@ const NavBar = () => {
             <a href="#FAQ">
               <li className="hover:text-gray-300 cursor-pointer">FAQ</li>
             </a>
+            <a href="#ContactUs">
+              <li className="hover:text-gray-300 cursor-pointer">Contact Us</li>
+            </a>
           </ul>
         </div>
         <div className="md:hidden flex items-center">
@@ -62,6 +65,9 @@ const NavBar = () => {
             </a>
             <a href="#FAQ">
               <li className="hover:text-gray-300 cursor-pointer">FAQ</li>
+            </a>
+            <a href="#ContactUs">
+              <li className="hover:text-gray-300 cursor-pointer">Contact Us</li>
             </a>
           </ul>
         </div>

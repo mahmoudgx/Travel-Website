@@ -9,8 +9,8 @@ const NavBar = () => {
   };
 
   return (
-    <nav className="bg-blue-900 p-5 md:p-10">
-      <div className="container mx-auto flex items-center justify-between">
+    <nav className="bg-blue-900 p-5 md:p-10 ">
+      <div className="container mx-auto flex items-center justify-between ">
         <a href="#" className="text-3xl text-white font-bold">
           Travel
         </a>

@@ -25,9 +25,9 @@ const images = [
   },
   {
     imageUrl:
-      "https://images.unsplash.com/photo-1547471080-7cc2caa01a7e?q=80&w=700&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "https://images.unsplash.com/photo-1539768942893-daf53e448371?q=80&w=700&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     title: "Africa",
-    description: "Kenya",
+    description: "Egypt",
   },
   {
     imageUrl:

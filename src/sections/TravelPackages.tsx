@@ -54,11 +54,17 @@ const TravelPackages = () => {
                 Most Popular
               </div>
             )}
-            <img
-              src={pkg.imageUrl}
-              alt={pkg.title}
-              className="w-full h-56 object-cover"
-            />
+            <motion.div
+              className="w-full h-56 overflow-hidden"
+              whileHover={{ scale: 1.05 }}
+              transition={{ ease: "easeOut", duration: 0.3 }}
+            >
+              <img
+                src={pkg.imageUrl}
+                alt={pkg.title}
+                className="w-full h-full object-cover"
+              />
+            </motion.div>
             <div className="p-4">
               <h3 className="text-xl font-semibold">{pkg.title}</h3>
               <p className="mt-2 text-gray-600">{pkg.description}</p>

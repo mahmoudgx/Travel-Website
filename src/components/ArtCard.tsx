@@ -1,3 +1,5 @@
+import { motion } from "framer-motion";
+
 interface Props {
   imageUrl: string;
   title: string;
@@ -6,19 +8,22 @@ interface Props {
 
 const ArtCard = ({ imageUrl, title, description }: Props) => {
   return (
-    <div className="relative w-[320px] h-[450px] rounded-lg overflow-hidden shadow-lg m-4">
+    <motion.div
+      className="relative w-[320px] h-[450px] rounded-lg overflow-hidden shadow-lg m-4"
+      whileHover={{ rotate: 3 }} // Rotates by 3 degrees on hover
+    >
       <img
         src={imageUrl}
         alt="Art Display"
         className="w-full h-full object-cover"
       />
-      <div className="absolute top-2 left-2 bg-white text-md px-2 py-1 rounded-full shadow-md">
+      <motion.div className="absolute top-2 left-2 bg-white text-md px-2 py-1 rounded-full shadow-md">
         {title}
-      </div>
+      </motion.div>
       <div className="absolute bottom-0 w-full bg-gradient-to-t from-black via-transparent to-transparent p-4 text-white">
         <p className="text-2xl font-semibold">{description}</p>
       </div>
-      <div className="absolute bottom-2 right-2 bg-white p-2 rounded-full shadow-md cursor-pointer">
+      <motion.div className="absolute bottom-2 right-2 bg-white p-2 rounded-full shadow-md cursor-pointer">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           className="h-6 w-6"
@@ -33,8 +38,8 @@ const ArtCard = ({ imageUrl, title, description }: Props) => {
             d="M14.752 11.168l-7.272-4.424A1 1 0 006 7.618v8.764a1 1 0 001.48.874l7.272-4.424a1 1 0 000-1.748z"
           />
         </svg>
-      </div>
-    </div>
+      </motion.div>
+    </motion.div>
   );
 };
 

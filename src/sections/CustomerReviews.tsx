@@ -1,3 +1,5 @@
+import { motion } from "framer-motion";
+
 const reviews = [
   {
     name: "John Doe",
@@ -33,9 +35,11 @@ const CustomerReviews = () => {
       </h2>
       <div className="mt-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {reviews.map((review, index) => (
-          <div
+          <motion.div
             key={index}
             className="bg-white rounded-lg overflow-hidden shadow-lg p-6"
+            whileHover={{ scale: 1.05 }}
+            transition={{ ease: "easeOut", duration: 0.3 }}
           >
             <div className="flex items-center mb-4">
               <img
@@ -63,7 +67,7 @@ const CustomerReviews = () => {
               </div>
             </div>
             <p className="text-gray-600">{review.review}</p>
-          </div>
+          </motion.div>
         ))}
       </div>
     </div>

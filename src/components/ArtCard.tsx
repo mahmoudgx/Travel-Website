@@ -10,7 +10,7 @@ const ArtCard = ({ imageUrl, title, description }: Props) => {
   return (
     <motion.div
       className="relative w-[320px] h-[450px] rounded-lg overflow-hidden shadow-lg m-4"
-      whileHover={{ rotate: 3 }} // Rotates by 3 degrees on hover
+      whileHover={{ rotate: 3 }}
     >
       <img
         src={imageUrl}

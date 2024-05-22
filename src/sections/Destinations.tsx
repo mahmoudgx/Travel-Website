@@ -72,24 +72,26 @@ const Destinations = () => {
   };
 
   return (
-    <div className="p-4 md:p-10" id="Destinations">
-      <motion.div
-        className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0 md:space-x-4"
-        initial={{ opacity: 0, y: -20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.5 }}
-      >
-        <h2 className="text-3xl md:text-4xl font-bold text-center">
-          Destinations
-        </h2>
-        <motion.button
-          className="bg-blue-500 hover:bg-blue-800 text-white font-bold py-2 px-4 rounded-full"
-          whileHover={{ scale: 1.1 }}
+    <>
+      <div className="py-10 md:px-14" id="Destinations">
+        <motion.div
+          className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0 md:space-x-4"
+          initial={{ opacity: 0, y: -20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
         >
-          View All Destinations
-        </motion.button>
-      </motion.div>
-      <div className="pt-4">
+          <h2 className="text-3xl md:text-4xl font-bold text-center">
+            Destinations
+          </h2>
+          <motion.button
+            className="bg-blue-500 hover:bg-blue-800 text-white font-bold py-2 px-4 rounded-full"
+            whileHover={{ scale: 1.1 }}
+          >
+            View All Destinations
+          </motion.button>
+        </motion.div>
+      </div>
+      <div className=" px-4 md:px-10">
         <Slider {...settings}>
           {images.map((image, index) => (
             <ArtCard
@@ -101,7 +103,7 @@ const Destinations = () => {
           ))}
         </Slider>
       </div>
-    </div>
+    </>
   );
 };
 

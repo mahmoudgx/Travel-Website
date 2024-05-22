@@ -1,3 +1,5 @@
+import { motion } from "framer-motion";
+
 const packages = [
   {
     imageUrl:
@@ -32,9 +34,12 @@ const TravelPackages = () => {
         <h2 className="text-3xl md:text-4xl font-bold text-center">
           Travel Packages
         </h2>
-        <button className="bg-blue-500 hover:bg-blue-800 text-white font-bold py-2 px-4 rounded-full">
+        <motion.button
+          whileHover={{ scale: 1.1 }}
+          className="bg-blue-500 hover:bg-blue-800 text-white font-bold py-2 px-4 rounded-full"
+        >
           View All Packages
-        </button>
+        </motion.button>
       </div>
       <div className="mt-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {packages.map((pkg, index) => (
@@ -59,9 +64,12 @@ const TravelPackages = () => {
               <p className="mt-2 text-gray-600">{pkg.description}</p>
               <div className="mt-4 flex justify-between items-center">
                 <span className="text-lg font-bold">{pkg.price}</span>
-                <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">
+                <motion.button
+                  whileHover={{ scale: 1.1 }}
+                  className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full"
+                >
                   Book Now
-                </button>
+                </motion.button>
               </div>
             </div>
           </div>

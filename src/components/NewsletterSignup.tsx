@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import { useState } from "react";
 
 const NewsletterSignup = () => {
@@ -36,12 +37,13 @@ const NewsletterSignup = () => {
               onChange={(e) => setEmail(e.target.value)}
               required
             />
-            <button
+            <motion.button
+              whileHover={{ scale: 1.1 }}
               type="submit"
               className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full"
             >
               Subscribe
-            </button>
+            </motion.button>
           </form>
           {message && (
             <p className="mt-4 text-center text-green-500">{message}</p>

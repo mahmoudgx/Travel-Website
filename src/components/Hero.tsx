@@ -1,5 +1,6 @@
 import { FaPlane } from "react-icons/fa";
 import "./Hero.css";
+import { motion } from "framer-motion";
 
 const Hero = () => {
   return (
@@ -21,9 +22,12 @@ const Hero = () => {
         <p className="text-lg md:text-2xl mb-8">
           Create lifetime memories in unforgettable locations around the world
         </p>
-        <button className="bg-blue-500 hover:bg-blue-800 text-white font-bold py-2 px-4 rounded-full">
+        <motion.button
+          whileHover={{ scale: 1.1 }}
+          className="bg-blue-500 hover:bg-blue-800 text-white font-bold py-2 px-4 rounded-full"
+        >
           <a href="#Destinations"> Choose your Destinations</a>
-        </button>
+        </motion.button>
       </div>
     </div>
   );

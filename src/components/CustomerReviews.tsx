@@ -4,21 +4,24 @@ const reviews = [
     review:
       "This travel agency provided an amazing experience! Highly recommend their services.",
     rating: 5,
-    imageUrl: "https://images.unsplash.com/photo-1522075469751-3a6694fb2f61",
+    imageUrl:
+      "https://plus.unsplash.com/premium_photo-1664536392896-cd1743f9c02c?q=80&w=100&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   },
   {
     name: "Jane Smith",
     review:
       "Great customer service and wonderful travel packages. Will book again!",
     rating: 4,
-    imageUrl: "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde",
+    imageUrl:
+      "https://images.unsplash.com/flagged/photo-1570612861542-284f4c12e75f?q=80&w=100&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   },
   {
     name: "Emily Johnson",
     review:
       "Had an unforgettable trip thanks to this travel agency. Excellent job!",
     rating: 5,
-    imageUrl: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d",
+    imageUrl:
+      "https://images.unsplash.com/photo-1491349174775-aaafddd81942?q=80&w=100&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   },
 ];
 

@@ -1,5 +1,3 @@
-import AboutUs from "./components/AboutUs";
-import ContactUs from "./components/ContactUs";
 import Destinations from "./components/Destinations";
 import Faq from "./components/Faq";
 import Footer from "./components/Footer";
@@ -12,11 +10,9 @@ const App = () => {
     <>
       <NavBar />
       <Hero />
-      <AboutUs />
       <Destinations />
       <TravelPackages />
       <Faq />
-      <ContactUs />
       <Footer />
     </>
   );

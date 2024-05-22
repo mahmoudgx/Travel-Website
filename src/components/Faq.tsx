@@ -29,7 +29,7 @@ const questions = [
 ];
 
 const FAQ = () => {
-  const [activeIndex, setActiveIndex] = useState<number | null>(null); // Specify type for activeIndex
+  const [activeIndex, setActiveIndex] = useState<number | null>(null);
 
   const toggleIndex = (index: number) => {
     // Specify type for index

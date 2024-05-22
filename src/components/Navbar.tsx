@@ -17,9 +17,6 @@ const NavBar = () => {
 
         <div className="hidden md:flex items-center space-x-10">
           <ul className="flex space-x-10 text-xl text-white">
-            <a href="#About">
-              <li className="hover:text-gray-300 cursor-pointer">About Us</li>
-            </a>
             <a href="#Destinations">
               <li className="hover:text-gray-300 cursor-pointer">
                 Destinations
@@ -47,9 +44,6 @@ const NavBar = () => {
       {isOpen && (
         <div className="md:hidden">
           <ul className="flex flex-col items-center space-y-4 mt-4 text-xl text-white">
-            <a href="#About">
-              <li className="hover:text-gray-300 cursor-pointer">About Us</li>
-            </a>
             <a href="#Destinations">
               <li className="hover:text-gray-300 cursor-pointer">
                 Destinations

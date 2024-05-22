@@ -27,6 +27,9 @@ const NavBar = () => {
                 Travel Packages
               </li>
             </a>
+            <a href="#Reviews">
+              <li className="hover:text-gray-300 cursor-pointer">Reviews</li>
+            </a>
             <a href="#FAQ">
               <li className="hover:text-gray-300 cursor-pointer">FAQ</li>
             </a>
@@ -53,6 +56,9 @@ const NavBar = () => {
               <li className="hover:text-gray-300 cursor-pointer">
                 Travel Packages
               </li>
+            </a>
+            <a href="#Reviews">
+              <li className="hover:text-gray-300 cursor-pointer">Reviews</li>
             </a>
             <a href="#FAQ">
               <li className="hover:text-gray-300 cursor-pointer">FAQ</li>

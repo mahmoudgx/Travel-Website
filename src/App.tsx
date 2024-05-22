@@ -1,3 +1,4 @@
+import CustomerReviews from "./components/CustomerReviews";
 import Destinations from "./components/Destinations";
 import Faq from "./components/Faq";
 import Footer from "./components/Footer";
@@ -13,6 +14,7 @@ const App = () => {
       <Hero />
       <Destinations />
       <TravelPackages />
+      <CustomerReviews />
       <Faq />
       <NewsletterSignup />
       <Footer />

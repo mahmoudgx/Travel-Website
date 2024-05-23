@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
 
 const questions = [
   {
@@ -52,9 +53,19 @@ const FAQ = () => {
                 {activeIndex === index ? "-" : "+"}
               </span>
             </h3>
-            {activeIndex === index && (
-              <p className="mt-2 text-gray-600">{item.answer}</p>
-            )}
+            <AnimatePresence>
+              {activeIndex === index && (
+                <motion.div
+                  initial={{ height: 0, opacity: 0 }}
+                  animate={{ height: "auto", opacity: 1 }}
+                  exit={{ height: 0, opacity: 0 }}
+                  transition={{ duration: 0.3 }}
+                  className="overflow-hidden"
+                >
+                  <p className="mt-2 text-gray-600">{item.answer}</p>
+                </motion.div>
+              )}
+            </AnimatePresence>
           </div>
         ))}
       </div>
